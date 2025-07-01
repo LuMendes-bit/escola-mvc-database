@@ -1,5 +1,5 @@
 function listarCursos(request, response){
-    response.send("controller responsável pela listagem")
+    response.send("controller responsável pela listagem de cursos")
 } 
 
 function cadastrarCursos(request, response){
