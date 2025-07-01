@@ -6,6 +6,10 @@ function cadastrarAlunos(request, response){
     response.send("Função responsável por cadastra um aluno")
 }
 
+function atualizarAlunos(request, response){
+    response.send("Função responsável por atualizar os alunos")
+}
+
 function deletarAlunos(request, response){
     response.send("Funçao responsável por deletar um aluno")
 }
@@ -13,5 +17,6 @@ function deletarAlunos(request, response){
 module.exports = {
     listarAlunos,
     cadastrarAlunos,
-    deletarAlunos
+    deletarAlunos,
+    atualizarAlunos
 }
