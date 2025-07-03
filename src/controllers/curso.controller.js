@@ -2,12 +2,10 @@ const cursoModel = require("../models/curso.model")
 
 async function listarCursos(request, response){
    const cursos = await cursoModel.listarTodosCursos()
-
-    response.json({
-        totalCursos: cursos.length,
-        cursos
-    })
-} 
+    console.log(cursos)
+    
+        response.render("listar-cursos",{cursos})
+    }
 
 function cadastrarCursos(request, response){
     response.send("Função responsável por cadastra um curso")

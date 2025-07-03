@@ -1,5 +1,7 @@
 const express = require("express")
 const app = express()
+app.set("view engine","ejs")
+app.set("views", "./src/views")
 const cursoController = require("./controllers/curso.controller")
 const professorController = require("./controllers/professor.controller")
 const alunoController = require("./controllers/aluno.controller")
